@@ -1,0 +1,20 @@
+@use "../custom" as *;
+
+.header {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    /*@include media-brakpoint-up (md) {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }*/
+    @mixin  media-brakpoint-up() {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    span {
+        font-family: "pacifico", cursive;
+        font-size: 4rem;
+        width: 10rem;
+    }
+}
