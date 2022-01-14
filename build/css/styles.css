@@ -3839,8 +3839,8 @@ textarea.form-control-lg {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
-  color: #743c20;
+  padding: 0.5rem 0;
+  color: #B5B5B5;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -11121,20 +11121,22 @@ textarea.form-control-lg {
 .header {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  /*@include media-brakpoint-up (md) {
-      padding-top: 10rem;
-      padding-bottom: 10rem;
-  }*/
+}
+@media (min-width: 768px) {
+  .header {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
 }
 .header span {
-  font-family: "pacifico", cursive;
   font-size: 4rem;
+  font-family: "Pacifico", cursive;
   width: 10rem;
 }
 
-.span {
-  font-family: "pacifico", cursive;
-  font-size: 2.5rem;
+span {
+  font-size: 2.6rem;
+  font-family: "Pacifico", cursive;
   width: 10rem;
 }
 
