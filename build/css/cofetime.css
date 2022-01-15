@@ -253,6 +253,18 @@ button:not(:disabled),
   -webkit-appearance: button;
 }
 
+output {
+  display: inline-block;
+}
+
+iframe {
+  border: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+
 .display-2 {
   font-size: calc(1.575rem + 3.9vw);
   font-weight: 900;
@@ -686,6 +698,23 @@ button:not(:disabled),
   }
 }
 
+.modal-dialog-scrollable {
+  height: calc(100% - 1rem);
+}
+.modal-dialog-scrollable .modal-content {
+  max-height: 100%;
+  overflow: hidden;
+}
+.modal-dialog-scrollable .modal-body {
+  overflow-y: auto;
+}
+
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - 1rem);
+}
+
 .modal-content {
   position: relative;
   display: flex;
@@ -745,6 +774,14 @@ button:not(:disabled),
     max-width: 500px;
     margin: 1.75rem auto;
   }
+
+  .modal-dialog-scrollable {
+    height: calc(100% - 3.5rem);
+  }
+
+  .modal-dialog-centered {
+    min-height: calc(100% - 3.5rem);
+  }
 }
 
 /* rtl:begin:ignore */
@@ -796,12 +833,20 @@ button:not(:disabled),
   display: flex !important;
 }
 
+.d-inline-flex {
+  display: inline-flex !important;
+}
+
 .d-none {
   display: none !important;
 }
 
 .w-50 {
   width: 50% !important;
+}
+
+.flex-row {
+  flex-direction: row !important;
 }
 
 .gap-4 {
@@ -832,6 +877,10 @@ button:not(:disabled),
 .my-5 {
   margin-top: 3rem !important;
   margin-bottom: 3rem !important;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
 }
 
 .mt-5 {
